@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( music )
+find_package( OpenCV REQUIRED )
+add_executable( music music.cpp )
+target_link_libraries( music ${OpenCV_LIBS} )
